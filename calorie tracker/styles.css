@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+*{
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body{
+ height: 100vh;
+ overflow-x: hidden;
+ background: #fff;
+ font-family: 'Raleway', sans-serif;
+}
+
+header{
+ background: black;
+ color: #fff;
+ display: flex;
+ position: relative;
+ height: 5rem;
+ align-items: center;
+ justify-content: center;
+}
+
+.banner{
+ border: 2px solid white;
+ position: absolute;
+ display: flex;
+ font-size: 2rem;
+}
+
+.inputContainer{
+
+ position: relative;
+ box-sizing: border-box;
+}
+
+.inputTitle h3{
+ margin: 10px;
+ text-align: center;
+}
+
+.form{
+ position: relative;
+ display: flex;
+ justify-content: center;
+}
+
+.inputLines{
+ position: relative;
+ margin: 10px;
+ padding: 10px;
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ box-sizing: border-box;
+ width: 50vw;
+}
+
+.inputLines span{
+ height: 2rem;
+ margin-top: 15px;
+ display: flex;
+ justify-content: center;
+}
+
+.inputLines input{
+ height: 2rem;
+ margin-top:10px;
+ margin-left: 5px;
+ display: flex;
+}
+
+button{
+ background: black;
+ border: none;
+ border-radius: 5%;
+ color: white;
+ padding: 10px;
+ width: fit-content;
+ display: flex;
+ margin: 0 auto;
+ cursor: pointer;
+ margin-top: 10px;
+}
+
+.outputContainer{
+
+ margin: 0 auto;
+ width: 100vw;
+}
+
+table{
+ width: 100%;
+ padding: 10px;
+ 
+}
+
+thead{
+ line-height: 50px;
+}
+
+th{
+ border-block: 2px solid black;
+
+}
+
+.totalCalorie, .totalProtein, .totalFats, .totalCarbs{
+ margin: 10px auto;
+}
+
+.calcTotal{
+ display: flex;
+ flex-direction: column;
+}

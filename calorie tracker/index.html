@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="styles.css">
+ <title>Calorie Tracker</title>
+</head>
+<body>
+ <header>
+  <section class="banner">Nutrition Tracker</section> 
+ </header>
+ <section class="inputContainer">
+  <div class="inputTitle">
+   <h3>Enter Name & Nutrtion Facts</h3>
+  </div>
+  <div class="form">
+   <form id="nutriForm">
+    <div class="inputLines">
+     <span for="name">Food:</span>
+     <input type="text" id="food" placeholder="enter the food's name">
+     <span for="calorie">Calorie:</span>
+     <input type="number" step="0.01" id="calorie" placeholder="enter in grams">
+     <span for="protein">Protein:</span>
+     <input type="number" step="0.01" id="protein" placeholder="enter in grams">
+     <span for="fat">Fat:</span>
+     <input type="number" step="0.01" id="fat" placeholder="enter in grams">
+     <span for="carbs">Carbs:</span>
+     <input type="number" step="0.01" id="carbs" placeholder="enter in grams">
+     <button onClick = "window.location.reload()"; type = "submit" class="buttonSave">Add food</button>
+    </div>
+   </form>
+  </div>
+ </section>
+ <section class="outputContainer">
+  <table class="table">
+   <thead>
+    <tr> 
+     <th>Food</th>
+     <th>Calories</th>
+     <th>Proteins</th>
+     <th>Fats</th>
+     <th>Carbs</th>
+    </tr>
+   </thead>
+   <tbody id = "microTable">
+   </tbody>
+  </table>
+  <div class="calcTotal">
+   <div class="totalCalorie">
+    Total Calories:
+     <span id = "caloriesSum">0</span>
+   </div>
+   <div class="totalProtein">
+    Total Proteins:
+     <span id = "proteinsSum">0</span>
+   </div>
+   <div class="totalFats">
+    Total Fats:
+     <span id = "fatsSum">0</span>
+   </div>
+   <div class="totalCarbs">
+    Total Carbs:
+     <span id = "carbsSum">0</span>
+   </div>
+   </div>
+ </section>
+
+  
+
+ <script src="./app.js"></script>
+</body>
+</html>
